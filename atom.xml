@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zfbetty/github.io</id>
     <title>Gridea</title>
-    <updated>2019-10-15T07:35:16.263Z</updated>
+    <updated>2019-10-15T07:38:52.906Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zfbetty/github.io"/>
     <link rel="self" href="https://zfbetty/github.io/atom.xml"/>
@@ -10,6 +10,18 @@
     <logo>https://zfbetty/github.io/images/avatar.png</logo>
     <icon>https://zfbetty/github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[hello world]]></title>
+        <id>https://zfbetty/github.io/post/hello-world</id>
+        <link href="https://zfbetty/github.io/post/hello-world">
+        </link>
+        <updated>2019-10-15T07:36:53.000Z</updated>
+        <content type="html"><![CDATA[<p>走自己的路，<br>
+看自己的风景，<br>
+坚持自己的方向，<br>
+理解别人的不同<img src="https://zfbetty/github.io/post-images/1571125121617.jpg" alt=""></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://zfbetty/github.io/post/hello-gridea</id>
