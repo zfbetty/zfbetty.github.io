@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zfbetty.github.io/</id>
     <title>中小鱼的碎碎念</title>
-    <updated>2019-10-23T08:45:11.980Z</updated>
+    <updated>2019-10-23T08:50:42.377Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zfbetty.github.io/"/>
     <link rel="self" href="https://zfbetty.github.io//atom.xml"/>
@@ -16,9 +16,13 @@
         <link href="https://zfbetty.github.io//post/pan-duan-yi-ge-object-dui-xiang-shi-fou-wei-kong">
         </link>
         <updated>2019-10-23T08:34:07.000Z</updated>
-        <content type="html"><![CDATA[<p>刚好用到收藏起来，好记性不如烂笔头。<br>
---本文来自极客学院<br>
-1.最常见的思路，for...in... 遍历属性，为真则为“非空数组”；否则为“空数组”</p>
+        <summary type="html"><![CDATA[<p>刚好用到收藏起来<br>
+--本文来自极客学院</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>刚好用到收藏起来<br>
+--本文来自极客学院</p>
+<!-- more -->
+<p>1.最常见的思路，for...in... 遍历属性，为真则为“非空数组”；否则为“空数组”</p>
 <pre><code class="language-javascript">for (var i in obj) { // 如果不为空，则会执行到这一步，返回true
    return true
 }
@@ -49,15 +53,21 @@ return true // 如果不为空，则会执行到这一步，返回true
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[hello world]]></title>
+        <title type="html"><![CDATA[hello world 好记性不如烂笔头]]></title>
         <id>https://zfbetty.github.io//post/hello-world</id>
         <link href="https://zfbetty.github.io//post/hello-world">
         </link>
         <updated>2019-10-15T07:36:53.000Z</updated>
+        <summary type="html"><![CDATA[<p>走自己的路，<br>
+看自己的风景，<br>
+坚持自己的方向，<br>
+理解别人的不同</p>
+]]></summary>
         <content type="html"><![CDATA[<p>走自己的路，<br>
 看自己的风景，<br>
 坚持自己的方向，<br>
-理解别人的不同<img src="https://zfbetty.github.io//post-images/1571125121617.jpg" alt=""></p>
+理解别人的不同</p>
+<!-- more -->
 ]]></content>
     </entry>
 </feed>
