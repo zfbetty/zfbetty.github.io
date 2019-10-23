@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>中小鱼的碎碎念</title>
+<title>判断一个object对象是否为空 | 中小鱼的碎碎念</title>
 <meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -91,47 +91,61 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://zfbetty.github.io//post/pan-duan-yi-ge-object-dui-xiang-shi-fou-wei-kong">
-                  <h2 class="post-title">判断一个object对象是否为空</h2>
-                </a>
-                <div class="post-date">
-                  2019-10-23
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
+          <div class="post-detail">
+            <h2 class="post-title">判断一个object对象是否为空</h2>
+            <div class="post-date">2019-10-23</div>
+            
+              <div class="feature-container" style="background-image: url('https://zfbetty.github.io//post-images/pan-duan-yi-ge-object-dui-xiang-shi-fou-wei-kong.jpg')">
               </div>
-              
-                <a class="right" href="https://zfbetty.github.io//post/pan-duan-yi-ge-object-dui-xiang-shi-fou-wei-kong">
-                  <div class="feature-container" style="background-image: url('https://zfbetty.github.io//post-images/pan-duan-yi-ge-object-dui-xiang-shi-fou-wei-kong.jpg')">
-                  </div>
-                </a>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://zfbetty.github.io//post/hello-world">
-                  <h2 class="post-title">hello world</h2>
-                </a>
-                <div class="post-date">
-                  2019-10-15
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
+            
+            <div class="post-content">
+              <p>刚好用到收藏起来，好记性不如烂笔头。<br>
+--本文来自极客学院<br>
+1.最常见的思路，for...in... 遍历属性，为真则为“非空数组”；否则为“空数组”</p>
+<pre><code class="language-javascript">for (var i in obj) { // 如果不为空，则会执行到这一步，返回true
+   return true
+}
+return false // 如果为空,返回false
+</code></pre>
+<p>2.通过 JSON 自带的 stringify() 方法来判断:</p>
+<pre><code class="language-javascript">JSON.stringify() 方法用于将 JavaScript 值转换为 JSON 字符串。
 
-          <div class="pagination-container">
-  
-  
-</div>
+if (JSON.stringify(data) === '{}') {
+    return false // 如果为空,返回false
+}
+return true // 如果不为空，则会执行到这一步，返回true
+</code></pre>
+<p>这里需要注意为什么不用 toString()，因为它返回的不是我们需要的。</p>
+<pre><code class="language-javascript">var a = {}
+a.toString() // &quot;[object Object]&quot;
+</code></pre>
+<p>3.ES6 新增的方法 Object.keys(): Object.keys() 方法会返回一个由一个给定对象的自身可枚举属性组成的数组。 如果我们的对象为空，他会返回一个空数组，如下：</p>
+<pre><code class="language-javascript">var a = {}
+Object.keys(a) // []
+</code></pre>
+<p>我们可以依靠Object.keys()这个方法通过判断它的长度来知道它是否为空。</p>
+<pre><code class="language-javascript">if (Object.keys(object).length === 0) {
+    return false // 如果为空,返回false
+}
+return true // 如果不为空，则会执行到这一步，返回true
+</code></pre>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zfbetty.github.io//post/hello-world">
+                  <h3 class="post-title">
+                    hello world
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
 
         </div>
       </div>
