@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zfbetty.github.io/</id>
     <title>前端中小鱼</title>
-    <updated>2019-10-23T10:24:58.372Z</updated>
+    <updated>2019-10-23T10:25:27.937Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zfbetty.github.io/"/>
     <link rel="self" href="https://zfbetty.github.io//atom.xml"/>
@@ -16,11 +16,18 @@
         <link href="https://zfbetty.github.io//post/actioves">
         </link>
         <updated>2019-10-23T10:17:38.000Z</updated>
+        <summary type="html"><![CDATA[<h5 id="vuex是什么">vuex是什么</h5>
+<p>state – 应用的数据内容对象<br>
+getters – 定义获取state数据的相关方法<br>
+mutations – 定义操作state中的数据的相关方法<br>
+actions – Action 类似于 mutation，不同在于：Action 提交的是 * mutation，而不是直接变更状态；Action 可以包含任意异步操作。</p>
+]]></summary>
         <content type="html"><![CDATA[<h5 id="vuex是什么">vuex是什么</h5>
 <p>state – 应用的数据内容对象<br>
 getters – 定义获取state数据的相关方法<br>
 mutations – 定义操作state中的数据的相关方法<br>
-actions – Action 类似于 mutation，不同在于：Action 提交的是 * mutation，而不是直接变更状态；Action 可以包含任意异步操作。<!-- more --></p>
+actions – Action 类似于 mutation，不同在于：Action 提交的是 * mutation，而不是直接变更状态；Action 可以包含任意异步操作。</p>
+<!-- more -->
 <blockquote>
 <p>vuex是一个状态(数据)管理工具，每一个vuex都有一个store(仓库),store是一个容器,它包含着你的应用中大部分的状态(state)。Vuex 和单纯的全局对象有以下两点不同:</p>
 <ul>
