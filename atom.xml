@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zfbetty.github.io/</id>
     <title>中小鱼的碎碎念</title>
-    <updated>2019-10-23T08:41:39.498Z</updated>
+    <updated>2019-10-23T08:45:11.980Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zfbetty.github.io/"/>
     <link rel="self" href="https://zfbetty.github.io//atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>好记性不如烂笔头</subtitle>
     <logo>https://zfbetty.github.io//images/avatar.png</logo>
     <icon>https://zfbetty.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, 中小鱼的碎碎念</rights>
@@ -16,6 +16,37 @@
         <link href="https://zfbetty.github.io//post/pan-duan-yi-ge-object-dui-xiang-shi-fou-wei-kong">
         </link>
         <updated>2019-10-23T08:34:07.000Z</updated>
+        <content type="html"><![CDATA[<p>刚好用到收藏起来，好记性不如烂笔头。<br>
+--本文来自极客学院<br>
+1.最常见的思路，for...in... 遍历属性，为真则为“非空数组”；否则为“空数组”</p>
+<pre><code class="language-javascript">for (var i in obj) { // 如果不为空，则会执行到这一步，返回true
+   return true
+}
+return false // 如果为空,返回false
+</code></pre>
+<p>2.通过 JSON 自带的 stringify() 方法来判断:</p>
+<pre><code class="language-javascript">JSON.stringify() 方法用于将 JavaScript 值转换为 JSON 字符串。
+
+if (JSON.stringify(data) === '{}') {
+    return false // 如果为空,返回false
+}
+return true // 如果不为空，则会执行到这一步，返回true
+</code></pre>
+<p>这里需要注意为什么不用 toString()，因为它返回的不是我们需要的。</p>
+<pre><code class="language-javascript">var a = {}
+a.toString() // &quot;[object Object]&quot;
+</code></pre>
+<p>3.ES6 新增的方法 Object.keys(): Object.keys() 方法会返回一个由一个给定对象的自身可枚举属性组成的数组。 如果我们的对象为空，他会返回一个空数组，如下：</p>
+<pre><code class="language-javascript">var a = {}
+Object.keys(a) // []
+</code></pre>
+<p>我们可以依靠Object.keys()这个方法通过判断它的长度来知道它是否为空。</p>
+<pre><code class="language-javascript">if (Object.keys(object).length === 0) {
+    return false // 如果为空,返回false
+}
+return true // 如果不为空，则会执行到这一步，返回true
+</code></pre>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[hello world]]></title>
@@ -23,5 +54,10 @@
         <link href="https://zfbetty.github.io//post/hello-world">
         </link>
         <updated>2019-10-15T07:36:53.000Z</updated>
+        <content type="html"><![CDATA[<p>走自己的路，<br>
+看自己的风景，<br>
+坚持自己的方向，<br>
+理解别人的不同<img src="https://zfbetty.github.io//post-images/1571125121617.jpg" alt=""></p>
+]]></content>
     </entry>
 </feed>
