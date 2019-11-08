@@ -1,174 +1,168 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" >
+            <head>
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
+        <meta charset="utf-8">
+        <title>前端中小鱼</title>
+        <link rel="stylesheet" href="https://zfbetty.github.io//styles/main.css">
+        <link rel="stylesheet" href="https://at.alicdn.com/t/font_1423691_1fcfxbwa79n.css">
+        <link href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+        <script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+         <script >hljs.initHighlightingOnLoad();</script>
 
-<title>文章归档 | 前端中小鱼</title>
-<meta name="description" content="好记性不如烂笔头">
+    </head>
+    <body>
+              <header class="header mdui-m-b-5">      
+            <div class="container  ">
+                <div class="index-title animated fadeInDown mdui-text-center mdui-text-color-white mdui-m-b-2" style="animation-delay: 0.2s"><a href="https://zfbetty.github.io/">前端中小鱼</a></div>
+                <div class="mdui-text-color-white animated fadeInDown mdui-text-center  mdui-m-b-3" style="animation-delay: 0.4s">好记性不如烂笔头</div>
+           
+            <nav id="nav" class="mdui-text-center animated fadeInDown" style="animation-delay: 0.6s">
+                   
+                            <li><a href="/">首页</a>
+                                <span class="nav-style top"></span>
+                                <span class="nav-style bottom"></span>
+                                <span class="nav-style left"></span>
+                                <span class="nav-style right"></span>
+                                </li>
+                    
+                            <li><a href="https://zfbetty.github.io//post/archives/">工作笔记</a>
+                                <span class="nav-style top"></span>
+                                <span class="nav-style bottom"></span>
+                                <span class="nav-style left"></span>
+                                <span class="nav-style right"></span>
+                                </li>
+                    
+                            <li><a href="/tags">读书</a>
+                                <span class="nav-style top"></span>
+                                <span class="nav-style bottom"></span>
+                                <span class="nav-style left"></span>
+                                <span class="nav-style right"></span>
+                                </li>
+                    
+                            <li><a href="/post/about">简历</a>
+                                <span class="nav-style top"></span>
+                                <span class="nav-style bottom"></span>
+                                <span class="nav-style left"></span>
+                                <span class="nav-style right"></span>
+                                </li>
+                    
+                  </nav>
+                </div>
+        </header>
+        <div class="mdui-container ">
+                <div class="mdui-row">
+                        <div class="mdui-col-md-10 mdui-col-offset-md-1 mdui-m-t-1">
+                            <div class="mdui-row-md-2 mdui-row-xs-1">
+                                
+                                
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://zfbetty.github.io//favicon.ico?v=1573199496337">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://zfbetty.github.io//styles/main.css">
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-
-
-  </head>
-  <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://zfbetty.github.io/">
-        <img src="https://zfbetty.github.io//images/avatar.png?v=1573199496337" class="site-logo">
-        <h1 class="site-title">前端中小鱼</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
-      
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="https://zfbetty.github.io//post/archives/" class="site-nav">
-            工作笔记
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            读书
-          </a>
-        
-      
-        
-          <a href="/post/about" class="site-nav" target="_blank">
-            简历
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      好记性不如烂笔头
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zfbetty.github.io//atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
+                    
+                              
+                               
+                                <article class="animated fadeIn" style="animation-delay:1s;animation-duration: 2s">
+                                        <div class="mdui-col mdui-p-a-1">
+                                          <div class="archives mdui-p-a-3">
+                                            <div class="mdui-typo-body-2 mdui-m-b-1">2019-10-23</div>
+                                            <div class="mdui-m-b-2 archives-title"><a href="https://zfbetty.github.io//post/actioves">vuex是什么</a></div>
+                                            <div class="mdui-typo-subheading mdui-m-b-1 mdui-text-truncate"><h5 id="vuex是什么">vuex是什么</h5>
+<p>state – 应用的数据内容对象<br>
+getters – 定义获取state数据的相关方法<br>
+mutations – 定义操作state中的数据的相关方法<br>
+actions – Action 类似于 mutation，不同在于：Action 提交的是 * mutation，而不是直接变更状态；Action 可以包含任意异步操作。</p>
 </div>
-
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          
-
-          <h2 class="archives-title">文章归档</h2>
-          <div class="archives-container">
-            
-              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2019</h2>
-              
-                
-                  <article class="post">
-                    <a href="https://zfbetty.github.io//post/actioves">
-                      <h2 class="post-title">
-                        vuex是什么
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://zfbetty.github.io//post/about">
-                      <h2 class="post-title">
-                        前端
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://zfbetty.github.io//post/archives">
-                      <h2 class="post-title">
-                        判断一个object对象是否为空
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://zfbetty.github.io//post/hello-world">
-                      <h2 class="post-title">
-                        hello world 好记性不如烂笔头
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-            
-          </div>
-
-          <div class="pagination-container">
-  
-  
+                                          </div>
+                                </article>
+                                
+                                
+                               
+                                <article class="animated fadeIn" style="animation-delay:1.3s;animation-duration: 2s">
+                                        <div class="mdui-col mdui-p-a-1">
+                                          <div class="archives mdui-p-a-3">
+                                            <div class="mdui-typo-body-2 mdui-m-b-1">2019-10-23</div>
+                                            <div class="mdui-m-b-2 archives-title"><a href="https://zfbetty.github.io//post/about">前端</a></div>
+                                            <div class="mdui-typo-subheading mdui-m-b-1 mdui-text-truncate"></div>
+                                          </div>
+                                </article>
+                                
+                                
+                               
+                                <article class="animated fadeIn" style="animation-delay:1.6s;animation-duration: 2s">
+                                        <div class="mdui-col mdui-p-a-1">
+                                          <div class="archives mdui-p-a-3">
+                                            <div class="mdui-typo-body-2 mdui-m-b-1">2019-10-23</div>
+                                            <div class="mdui-m-b-2 archives-title"><a href="https://zfbetty.github.io//post/archives">判断一个object对象是否为空</a></div>
+                                            <div class="mdui-typo-subheading mdui-m-b-1 mdui-text-truncate"><p>刚好用到收藏起来<br>
+--本文来自极客学院</p>
 </div>
+                                          </div>
+                                </article>
+                                
+                                
+                               
+                                <article class="animated fadeIn" style="animation-delay:1.9s;animation-duration: 2s">
+                                        <div class="mdui-col mdui-p-a-1">
+                                          <div class="archives mdui-p-a-3">
+                                            <div class="mdui-typo-body-2 mdui-m-b-1">2019-10-15</div>
+                                            <div class="mdui-m-b-2 archives-title"><a href="https://zfbetty.github.io//post/hello-world">hello world 好记性不如烂笔头</a></div>
+                                            <div class="mdui-typo-subheading mdui-m-b-1 mdui-text-truncate"><p>走自己的路，<br>
+看自己的风景，<br>
+坚持自己的方向，<br>
+理解别人的不同</p>
+</div>
+                                          </div>
+                                </article>
+                                
+                                
+                                
+                              </div>
+                                                            <nav class="mdui-m-t-5">
+                                
+                                
+                                </nav>     
+                                    
+                        </div>
+                      </div>
+    
+                
 
-        </div>
-      </div>
-    </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-<script type="application/javascript">
-
-AOS.init();
-
-hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
-</script>
-
-
-
-
-  </body>
+              </div>
+                     <footer class="footer mdui-m-t-5 mdui-text-center">
+               <nav class="social-links">
+                      <ul>
+                      
+                      
+                           
+                      
+                           
+                      
+                           
+                      
+                           
+                      
+                           
+                      
+                           
+                      
+                           
+                      
+                           
+                      
+                           
+                      
+                           
+                      
+                           
+                      
+                           
+                      </ul>
+                    </nav>
+                  <div class="copyright">
+                      <p>Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> <br/> Theme <a href="https://github.com/alterfang/gridea-theme-song/">宋</a> by <a href="https://shanbu.fun/">山卜方</a> </p>
+                  </div>
+                  
+              </footer>
+    </body>
 </html>
