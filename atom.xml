@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zfbetty.github.io/</id>
     <title>前端中小鱼</title>
-    <updated>2019-11-08T07:53:25.666Z</updated>
+    <updated>2019-11-08T08:04:20.008Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zfbetty.github.io/"/>
     <link rel="self" href="https://zfbetty.github.io//atom.xml"/>
-    <subtitle>好记性不如烂笔头</subtitle>
+    <subtitle>云在青天水在瓶</subtitle>
     <logo>https://zfbetty.github.io//images/avatar.png</logo>
     <icon>https://zfbetty.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, 前端中小鱼</rights>
