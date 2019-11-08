@@ -3,7 +3,7 @@
         <head>
         <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
         <meta charset="utf-8">
-        <title>前端 | 前端中小鱼</title>
+        <title>判断一个object对象是否为空 | 前端中小鱼</title>
         <link rel="stylesheet" href="https://zfbetty.github.io//styles/main.css">
         <link rel="stylesheet" href="https://at.alicdn.com/t/font_1423691_1fcfxbwa79n.css">
         <link href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css" rel="stylesheet">
@@ -63,18 +63,48 @@
                 <div class="mdui-row">
                         <div class="mdui-col-md-8 mdui-col-offset-md-2 ">
                                 <article class="mdui-p-a-2 post animated fadeIn" style="animation-delay: 0.8s;animation-duration: 2s">
-                                    <div class="post-title  mdui-m-b-1">前端</div>
-                                    <div class="mdui-typo-body-2 mdui-m-b-2" datetime="2019-10-23 17:11:48">2019-10-23 / 1 min read</div>
-                                    <div class="mdui-m-b-2 mdui-typo post-neirong"><p>xxxtest</p>
+                                    <div class="post-title  mdui-m-b-1">判断一个object对象是否为空</div>
+                                    <div class="mdui-typo-body-2 mdui-m-b-2" datetime="2019-10-23 16:34:07">2019-10-23 / 2 min read</div>
+                                    <div class="mdui-m-b-2 mdui-typo post-neirong"><p>刚好用到收藏起来<br>
+--本文来自极客学院</p>
+<!-- more -->
+<p>1.最常见的思路，for...in... 遍历属性，为真则为“非空数组”；否则为“空数组”</p>
+<pre><code class="language-javascript">for (var i in obj) { // 如果不为空，则会执行到这一步，返回true
+   return true
+}
+return false // 如果为空,返回false
+</code></pre>
+<p>2.通过 JSON 自带的 stringify() 方法来判断:</p>
+<pre><code class="language-javascript">JSON.stringify() 方法用于将 JavaScript 值转换为 JSON 字符串。
+
+if (JSON.stringify(data) === '{}') {
+    return false // 如果为空,返回false
+}
+return true // 如果不为空，则会执行到这一步，返回true
+</code></pre>
+<p>这里需要注意为什么不用 toString()，因为它返回的不是我们需要的。</p>
+<pre><code class="language-javascript">var a = {}
+a.toString() // &quot;[object Object]&quot;
+</code></pre>
+<p>3.ES6 新增的方法 Object.keys(): Object.keys() 方法会返回一个由一个给定对象的自身可枚举属性组成的数组。 如果我们的对象为空，他会返回一个空数组，如下：</p>
+<pre><code class="language-javascript">var a = {}
+Object.keys(a) // []
+</code></pre>
+<p>我们可以依靠Object.keys()这个方法通过判断它的长度来知道它是否为空。</p>
+<pre><code class="language-javascript">if (Object.keys(object).length === 0) {
+    return false // 如果为空,返回false
+}
+return true // 如果不为空，则会执行到这一步，返回true
+</code></pre>
 </div>
                                     <div class="mdui-divider mdui-m-b-2"></div>
                                     <div class="mdui-row-xs-2 post-fenye">
                                        
-                                        <div class="mdui-col"> <div class="mdui-text-left"><a href="https://zfbetty.github.io//post/actioves">vuex是什么</a></div></div>
+                                        <div class="mdui-col"> <div class="mdui-text-left"><a href="https://zfbetty.github.io//post/vuex-shi-shi-me">vuex是什么</a></div></div>
                                         
 
                                         
-                                        <div class="mdui-col"><div class="mdui-text-right "><a href="https://zfbetty.github.io//post/archives">判断一个object对象是否为空</a></div> </div>
+                                        <div class="mdui-col"><div class="mdui-text-right "><a href="https://zfbetty.github.io//post/hello-world">hello world </a></div> </div>
                                        
                                       </div>
                                    
