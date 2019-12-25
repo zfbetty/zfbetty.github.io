@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zfbetty.github.io/</id>
     <title>前端中小鱼</title>
-    <updated>2019-12-17T08:20:28.482Z</updated>
+    <updated>2019-12-25T08:15:20.513Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zfbetty.github.io/"/>
     <link rel="self" href="https://zfbetty.github.io//atom.xml"/>
@@ -11,15 +11,13 @@
     <icon>https://zfbetty.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, 前端中小鱼</rights>
     <entry>
-        <title type="html"><![CDATA[2019年最后一个月]]></title>
-        <id>https://zfbetty.github.io//post/2019-nian-zui-hou-yi-ge-yue</id>
-        <link href="https://zfbetty.github.io//post/2019-nian-zui-hou-yi-ge-yue">
+        <title type="html"><![CDATA[9102最后一个月]]></title>
+        <id>https://zfbetty.github.io//post/9102-zui-hou-yi-ge-yue</id>
+        <link href="https://zfbetty.github.io//post/9102-zui-hou-yi-ge-yue">
         </link>
-        <updated>2019-12-17T05:19:16.000Z</updated>
-        <content type="html"><![CDATA[<p>9102马上要过完了<br>
-国庆过后就一直处于加班状态 披星戴月的 晚上10点前下班就已经很幸福了 每天下班路上都没见几个人 周末也一直都加班 接二连三的项目 这几天目前这个项目第一阶段要准备上线 连续三天两点后才到家 第二天照常上班 已经处于极度疲惫的状态了<br>
-<img src="https://zfbetty.github.io//post-images/1576570765544.png" alt=""><br>
-<img src="https://zfbetty.github.io//post-images/1576570770170.png" alt=""></p>
+        <updated>2019-12-25T08:12:07.000Z</updated>
+        <content type="html"><![CDATA[<p>最后一个月 决定把其它地方的笔记都往这边搬<br>
+两个月披星戴月的 项目终于可以上线了 这周末我要睡两天两夜</p>
 ]]></content>
     </entry>
     <entry>
